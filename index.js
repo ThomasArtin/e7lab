@@ -122,7 +122,9 @@ app.delete('/api/students/:id',(req,res)=> {
 });
 
 
-
+app.get('/',(req, res)=>{
+    res.send('welcome !');
+});
 
 
 function  validateCourse(course) {
