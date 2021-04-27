@@ -17,9 +17,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get('/web/courses/create', (req, res) => {
-    ret = res.sendFile('html/course.html', { root: __dirname });});
+    ret = res.sendFile('html/courses.html', { root: __dirname });});
 app.get('/web/students/create', (req, res) => {
-ret = res.sendFile('html/student.html', { root: __dirname });});
+ret = res.sendFile('html/students.html', { root: __dirname });});
 app.use(express.static('./html')) 
 
 app.get('/api/courses',(req, res)=>{
