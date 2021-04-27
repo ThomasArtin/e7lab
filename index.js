@@ -17,10 +17,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.get('/web/courses/create', (req, res) => {
-    ret = res.sendFile('public/course.html', { root: __dirname });});
+    ret = res.sendFile('html/course.html', { root: __dirname });});
 app.get('/web/students/create', (req, res) => {
-ret = res.sendFile('public/student.html', { root: __dirname });});
-app.use(express.static('./public')) 
+ret = res.sendFile('html/student.html', { root: __dirname });});
+app.use(express.static('./html')) 
 
 app.get('/api/courses',(req, res)=>{
     res.send(courses);
@@ -122,7 +122,9 @@ app.delete('/api/students/:id',(req,res)=> {
 });
 
 
-
+app.get('/',(req, res)=>{
+    res.send('welcome !');
+});
 
 
 function  validateCourse(course) {
