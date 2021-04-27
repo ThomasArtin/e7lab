@@ -1,0 +1,16 @@
+{
+  "name": "e7exp",
+  "version": "1.0.0",
+  "description": "e7 lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thomas joseph",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "heroku": "^7.52.0",
+    "joi": "^17.4.0"
+  }
+}
